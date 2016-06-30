@@ -86,7 +86,7 @@ public class MainActivity extends Activity implements AsyncResponse {
 
     private class JsonUpdater extends AsyncTask<Void, Void, EventList> {
         private static final String TAG = "uwevents.JsonParse";
-        private static final String SERVER_URL = "http://fenixfox.net:60000/events.json";
+        private static final String SERVER_URL = "https://fenixfox.net/events_data/events.json";
         private HttpURLConnection urlConnection;
         private Event[] gson;
         public AsyncResponse delegate = null;
